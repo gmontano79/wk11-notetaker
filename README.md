@@ -38,7 +38,7 @@ Once the page is loaded. the user will see a Get start button. the user just nee
 
 GitHub Repository: https://github.com/gmontano79/wk11-notetaker
 
-Heroku Deployment: https://git.heroku.com/notetaker-gm.git
+Heroku Deployment: https://notetaker-gm.herokuapp.com/
 
 ## Credits
 
