@@ -47,7 +47,7 @@ app.post("/api/notes", function (req, res) {
   newNote.id = uniqueId;
   data.push(newNote);
 
-  fs.writeFileSync("./db/db.json", JSON.stringify(data), function (err) {
+  fs.writeFileSync("./Develop/db/db.json", JSON.stringify(data), function (err) {
     if (err) throw (err);
   });
 
