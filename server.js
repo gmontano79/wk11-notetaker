@@ -8,7 +8,7 @@ var data = JSON.parse(fs.readFileSync("./Develop/db/db.json", "utf8"));
 // SERVER
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -74,8 +74,8 @@ app.delete("/api/notes/:id", function (req, res) {
 
 
 // LISTENING SERVER
-app.listen(3001, () => {
-  console.log(`App listening at http://localhost:3001`);
+app.listen(PORT, () => {
+  console.log(`App listening at http://localhost:${PORT}`);
 
 })
 
